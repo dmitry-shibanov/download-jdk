@@ -32,7 +32,7 @@ jobs:
         with:
           java-version: ${{ steps.download-jdk.outputs.version }}
           jdkFile: "${{ steps.download-jdk.outputs.file }}"
-          distribution: zulu
+          distribution: jdkfile
       - name: 'Print Java version'
         run: java --version
 
@@ -72,7 +72,7 @@ jobs:
         with:
           java-version: ${{ steps.download-jdk.outputs.version }}
           jdkFile: "${{ steps.download-jdk.outputs.file }}"
-          distribution: zulu
+          distribution: jdkfile
       - name: 'Print Java version'
         run: java --version
 
@@ -108,6 +108,6 @@ jobs:
         with:
           java-version: ${{ steps.download-jdk.outputs.version }}
           jdkFile: "${{ steps.download-jdk.outputs.file }}"
-          distribution: zulu
+          distribution: jdkfile
       - name: 'Print Java version'
         run: java --version
