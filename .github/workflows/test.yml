@@ -28,7 +28,7 @@ jobs:
           echo "env.JDK_FILE                       = ${{ env.JDK_FILE }}"
           echo "env.JDK_VERSION                    = ${{ env.JDK_VERSION }}"
       - name: 'Set up JDK'
-        uses: actions/setup-java@implement-v2-tests
+        uses: maxim-lobanov/setup-java@v2-preview
         with:
           java-version: ${{ steps.download-jdk.outputs.version }}
           jdkFile: "${{ steps.download-jdk.outputs.file }}"
@@ -68,7 +68,7 @@ jobs:
           echo "env.JDK_FILE                       = ${{ env.JDK_FILE }}"
           echo "env.JDK_VERSION                    = ${{ env.JDK_VERSION }}"
       - name: 'Set up JDK'
-        uses: actions/setup-java@implement-v2-tests
+        uses: maxim-lobanov/setup-java@v2-preview
         with:
           java-version: ${{ steps.download-jdk.outputs.version }}
           jdkFile: "${{ steps.download-jdk.outputs.file }}"
@@ -104,7 +104,7 @@ jobs:
           echo "env.JDK_FILE                       = ${{ env.JDK_FILE }}"
           echo "env.JDK_VERSION                    = ${{ env.JDK_VERSION }}"
       - name: 'Set up JDK'
-        uses: actions/setup-java@implement-v2-tests
+        uses: maxim-lobanov/setup-java@v2-preview
         with:
           java-version: ${{ steps.download-jdk.outputs.version }}
           jdkFile: "${{ steps.download-jdk.outputs.file }}"
